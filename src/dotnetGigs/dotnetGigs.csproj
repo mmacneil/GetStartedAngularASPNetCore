@@ -9,4 +9,7 @@
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
     <PackageReference Include="microsoft.aspnetcore.staticfiles" Version="1.1.1" />
   </ItemGroup>
+  <Target Name="AngularBuild" AfterTargets="Build">
+  <Exec Command="npm run build" />
+   </Target>
 </Project>
